@@ -1,3 +1,10 @@
-<p>
-  recipe-item works!
-</p>
+<div *ngFor="let recipe of recipes" class="row">  
+  <a href="#" >
+  <div class="col-md-3">
+    <img class="img-responsive"src="{{recipe.imagePath}}" alt="recipe image">
+  </div>
+  <div class="col-md-9">
+    <h2>{{recipe.name}}</h2>
+  </div>
+  </a>
+</div>
